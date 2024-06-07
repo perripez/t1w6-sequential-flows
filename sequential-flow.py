@@ -1,19 +1,13 @@
+day_number = 3
 
-    
+match day_number:
+    case  1:
+        day_name = "Monday"
+    case 2:
+        day_name = "Tuesday"
+    case 3:
+        day_name = "Wednesday"
+    case 4:
+        day_name = "Thursday"
 
-
-a = True
-b = False
-
-# result = a and b
-# print(result)
-# FALSE
-
-# result = a or b
-# print(result)
-# TRUE
-
-# result = not b
-# print(result)
-# TRUE
-
+print(day_name)

@@ -81,3 +81,53 @@ if age >= 18:
         print("ACCESS DENIED")
 else:
     print("ACCESS DENIED")
+
+-> Can be reduced to this:
+
+if  age >=18 and has_permission:
+    print("ACCESS GRANTED")
+else:
+    print("ACCESS DENIED")
+
+# Ternary Operator
+Condense series of code to one line, where applicable
+
+eg.
+age = 20
+has_permission = False
+
+print("ACCESS GRANTED") if age >=18 and has_permission else print("ACCRESS DENIED")
+
+// This:
+temperature = 30
+
+if temperature > 30:
+    message = "It's hot"
+else:
+    message = "It's not hot"
+
+print(message)
+
+// To This:
+temperature = 30
+
+message = "It's hot" if temperature > 30 else "It's not hot"
+print(message)
+
+# Match-case
+Control flow, similar to switch statement in other programming languages
+
+eg.
+day_number = 3
+
+match day_number:
+    case  1:
+        day_name = "Monday"
+    case 2:
+        day_name = "Tuesday"
+    case 3:
+        day_name = "Wednesday"
+    case 4:
+        day_name = "Thursday"
+
+print(day_name)
